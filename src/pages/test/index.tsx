@@ -5,7 +5,7 @@ const Test = () => {
   const [isModalSheetOpen, setIsModalSheetOpen] = useState(false);
   return (
     <div>
-      <h1 className='text-center my-3'>Test Page</h1>
+      <h1 className='my-3 text-center'>Test Page</h1>
       <button
         onClick={() => setIsModalSheetOpen(!isModalSheetOpen)}
         className='rounded-full border-red-500 bg-purple-400 p-4 text-white focus:border'
@@ -16,7 +16,10 @@ const Test = () => {
         isOpen={isModalSheetOpen}
         onClose={() => setIsModalSheetOpen(false)}
         modalSheetHeight={window.innerHeight * (710 / 820)}
-      />
+        title='Krediler'
+      >
+        <p>Test Children</p>
+      </ModalSheet>
     </div>
   );
 };
