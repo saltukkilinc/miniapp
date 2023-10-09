@@ -1,9 +1,14 @@
-function App() {
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/home';
+import Test from './pages/test';
+
+const App = () => {
   return (
-    <>
-      <h1 className='flex h-3 w-3 items-center justify-center text-red-400'>Hello</h1>
-    </>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/test' element={<Test />} />
+    </Routes>
   );
-}
+};
 
 export default App;
