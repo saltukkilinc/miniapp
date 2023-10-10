@@ -8,7 +8,7 @@ const Test = () => {
       <h1 className='my-3 text-center'>Test Page</h1>
       <button
         onClick={() => setIsModalSheetOpen(!isModalSheetOpen)}
-        className='rounded-full border-red-500 bg-purple-400 p-4 text-white focus:border'
+        className='mx-auto block rounded-full bg-purple-500 p-4 text-white hover:bg-purple-600'
       >
         {isModalSheetOpen ? 'Close' : 'Open'} Modal Sheet
       </button>
