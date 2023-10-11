@@ -1,3 +1,5 @@
+import Header from '../../components/header';
+import Layout from '../../components/layout';
 import { useAppDispatch, useAppSelector } from '../../redux/store';
 
 function Home() {
@@ -5,7 +7,7 @@ function Home() {
   const name = useAppSelector((state) => state.auth.name);
 
   return (
-    <>
+    <Layout>
       <h1 className='text-center my-3'>{name}</h1>
       <button
         onClick={() => dispatch.auth.setName(name === 'saltuk' ? 'osman' : 'saltuk')}
@@ -13,7 +15,7 @@ function Home() {
       >
         Change Name
       </button>
-    </>
+    </Layout>
   );
 }
 
