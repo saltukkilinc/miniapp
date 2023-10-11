@@ -22,9 +22,9 @@ function ModalSheet({ isOpen, onClose, modalSheetHeight, children, title }: Moda
         <Sheet.Backdrop onTap={onClose} style={{ background: 'rgba(0, 0, 0, 0.29)' }} />
         <Sheet.Container style={{ borderRadius: '32px 32px 0px 0px', boxShadow: 'none' }}>
           <Sheet.Header>
-            <div className='relative border-b border-b-[#E6EAF6] pb-[9.5px] pt-2'>
+            <div className='relative border-b border-b-border-secondary pb-[9.5px] pt-2'>
               <div className='mx-auto h-1 w-16 rounded-[2px] bg-[#D2D6E2]'></div>
-              <h2 className='mt-[17.5px] text-center text-[18px] font-medium leading-normal text-[#141824]'>
+              <h2 className='mt-[17.5px] text-center text-[18px] font-medium leading-normal text-primary-text'>
                 {title}
               </h2>
               <img
@@ -43,16 +43,5 @@ function ModalSheet({ isOpen, onClose, modalSheetHeight, children, title }: Moda
     </div>
   );
 }
-
-const SpecialOfferModalButton = ({ onClose }: { onClose: () => void }) => {
-  return (
-    <button
-      className='h-[52px] w-full shrink-0 rounded-[18px] bg-[#15BCD3] text-base font-semibold text-white'
-      onClick={onClose}
-    >
-      No Thanks!
-    </button>
-  );
-};
 
 export default ModalSheet;

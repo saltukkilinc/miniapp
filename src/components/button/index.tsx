@@ -36,13 +36,13 @@ const Button = ({
 
     switch (type) {
       case ButtonType.primary:
-        buttonClasses = 'text-white bg-[#701ADF] hover:bg-[#B67DFF] disabled:bg-[#D3D3D3]';
+        buttonClasses = 'text-white bg-primary hover:bg-[#B67DFF] disabled:bg-[#D3D3D3]';
         break;
       case ButtonType.secondary:
-        buttonClasses = 'border-[1px] border-[#701ADF] text-[#701ADF] text-[18px]';
+        buttonClasses = 'border-[1px] border-primary text-[#701ADF] text-[18px]';
         break;
       case ButtonType.free:
-        buttonClasses = 'border-none text-[#701ADF]'
+        buttonClasses = 'border-none text-primary'
       default:
         break;
     }
